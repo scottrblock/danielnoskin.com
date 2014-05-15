@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Daniel Noskin</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <link id="favicon" rel="shortcut icon" href="img/favicon.ico">
+        
+        <meta name="author" content="Daniel Noskin">
+        <meta name="description" content="Daniel Noskin's Professional Website">
+        <meta name="keywords" content="Startups, Daniel Noskin, Projects, Website Development, Entrepreneurship" />
+        
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-38831736-1']);
+            _gaq.push(['_trackPageview']);
+                
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+                
+        </script>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+    </head>
+    <body>
+        <div id="cover"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 col-xs-offset-1 text-center">
+                    <img id="cover-image"></img>
+                </div>
+                <div class="col-xs-1 text-center">
+                    
+                </div>
+                <div class="col-xs-5 text-center">
+                    <div id="cover-text">Hover Below to Explore &nbsp: )</div>
+                </div>
+                <div class="col-xs-6 col-xs-offset-3 text-center">
+                    <div id="cover-text-large"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 text-center">
+                    <div class="profile">
+                        <img id="profile" src="img/me.png" />
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <div class="name">
+                        Daniel Noskin
+                        <div id="cover-text-detail">
+                            <a href="https://www.twitter.com/dnosk">Twitter</a>
+                            <a href="http://www.linkedin.com/in/danielnoskin/">LinkedIn</a>
+                            <a href="mailto:dnoskin@gmail.com">Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="apps">
+            <div class="first">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-2 col-xs-offset-2 text-center">
+                            <a href="http://www.parallel.fm"><img id="parallel" src="img/parallel.png" /></a>
+                        </div>
+                        <div class="col-xs-2 text-center">
+                            <a href="http://www.startupshell.org"><img id="shell" src="img/shell.png" style="border-width: 1px; border-style: solid; border-color:#DD6666;" /></a>
+                        </div>
+                        <div class="col-xs-2 text-center">
+                            <a href="http://snapdio.com"><img id="snapdio" src="img/snapdio.png" /></a>
+                        </div>
+                        <div class="col-xs-2 text-center">
+                            <a href="http://terpconnect.uxs.edu/~dnosk/Snow%20Jam/"><img id="snow" src="img/snow.png" style="border-width: 1px; border-style: solid; border-color:#077e9a;" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-2 col-xs-offset-2 text-center">
+                            <a href="https://www.dropbox.com/austin"><img id="dropbox" src="img/dropbox.png" /></a>
+                        </div>
+                        <div class="col-xs-2 text-center">
+                            <a href="http://www.collegehumor.com/"><img id="collegehumor" src="img/collegehumor.png" /></a>
+                        </div>
+                        <div class="col-xs-2 text-center">
+                            <a href="http://www.google.com/edu/programs/adcamp/"><img id="google" src="img/google.png" /></a>
+                        </div>
+                        <div class="col-xs-2 text-center">
+                            <a href="http://www.applicoinc.com/"><img id="applico" src="img/applico.png" style="border-width: 1px; border-style: solid; border-color:#b3b5b4;" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#profile').on({
+            'mouseover' : function() {
+              $('#cover').css('background-color','#7ecdc3');
+              $("#cover-text-large").text("I love the energy behind people with big ideas and I am always willing to collaborate");
+              $("#cover-text-detail").text("Passionate, Creative, Inspirational");
+            },
+            mouseout : function() {
+              $('#cover').css('background-color','#7ecdc3');
+              $("#cover-text-large").text("");
+              $("#cover-text-detail").text("");
+              $("#cover-text-detail").append("<a href='https://www.twitter.com/dnosk'>Twitter </a><a href='http://www.linkedin.com/in/danielnoskin'>LinkedIn </a><a href='mailto:dnoskin@gmail.com'>Email</a>");
+                }
+              });
+            $('#parallel').on({
+            'mouseover' : function() {
+              $('#cover').css('background-color','#7ecdc3');
+              $("#cover-image").attr('src', 'img/parallel.png');
+              $("#cover-text").text("parallel Let's you Listen with your Favorite Athletes in Real Time");
+              $("#cover-text-detail").text("Founder, iOS Developer, Designer");
+            },
+            mouseout : function() {
+              $('#cover').css('background-color','#7ecdc3');
+              $("#cover-image").attr('src', '');
+              $("#cover-text").text("");
+              $("#cover-text-detail").text("");
+              $("#cover-text-detail").append("<a href='https://www.twitter.com/dnosk'>Twitter </a><a href='http://www.linkedin.com/in/danielnoskin'>LinkedIn </a><a href='mailto:dnoskin@gmail.com'>Email</a>");
+                }
+              });
+            $('#shell').on({
+            'mouseover' : function() {
+              $("#favicon").attr("href","img/favicon1.ico");
+              $('#cover').css('background-color','#DD6666');
+              $("#cover-image").attr('src', 'img/shell.png');
+              $("#cover-text").text("The Startup Shell is a Student Run Incubator and Coworking Space");
+              $("#cover-text-detail").text("Co-Founder, Wizard of Lightning Bulb Ideas");
+            },
+            mouseout : function() {
+              $("#favicon").attr("href","img/favicon.ico");
+              $('#cover').css('background-color','#7ecdc3');
+              $("#cover-image").attr('src', '');
+              $("#cover-text").text("");
+              $("#cover-text-detail").text("");
+              $("#cover-text-detail").append("<a href='https://www.twitter.com/dnosk'>Twitter </a><a href='http://www.linkedin.com/in/danielnoskin'>LinkedIn </a><a href='mailto:dnoskin@gmail.com'>Email</a>");
+                }
+              });
+            $('#snapdio').on({
+            'mouseover' : function() {
+              $("#favicon").attr("href","img/favicon2.ico");
+              $('#cover').css('background-color','#66e69f');
+              $("#cover-image").attr('src', 'img/snapdio.png');
+              $("#cover-text").text("Snapdio is Snapchat for Music Made during the Bitcamp Hackathon");
+              $("#cover-text-detail").text("Co-Founder, iOS/Web Developer, UX/UI");
+            },
+            mouseout : function() {
+              $("#favicon").attr("href","img/favicon.ico");
+              $('#cover').css('background-color','#7ecdc3');
+              $("#cover-image").attr('src', '');
+              $("#cover-text").text("");
+              $("#cover-text-detail").text("");
+              $("#cover-text-detail").append("<a href='https://www.twitter.com/dnosk'>Twitter </a><a href='http://www.linkedin.com/in/danielnoskin'>LinkedIn </a><a href='mailto:dnoskin@gmail.com'>Email</a>");
+                }
+              });
+            $('#snow').on({
+            'mouseover' : function() {
+              $("#favicon").attr("href","img/favicon3.ico");
+              $('#cover').css('background-color','#077e9a');
+              $("#cover-image").attr('src', 'img/snowjam.png');
+              $("#cover-text").text("Snow Jam is The Perfect Combination of Powder and Tunes");
+              $("#cover-text-detail").text("Developer, Designer");
+            },
+            mouseout : function() {
+              $("#favicon").attr("href","img/favicon.ico");
+              $('#cover').css('background-color','#7ecdc3');
+              $("#cover-image").attr('src', '');
+              $("#cover-text").text("");
+              $("#cover-text-detail").text("");
+              $("#cover-text-detail").append("<a href='https://www.twitter.com/dnosk'>Twitter </a><a href='http://www.linkedin.com/in/danielnoskin'>LinkedIn </a><a href='mailto:dnoskin@gmail.com'>Email</a>");
+                }
+              });
+            $('#dropbox').on({
+            'mouseover' : function() {
+              $("#favicon").attr("href","img/favicon4.ico");
+              $('#cover').css('background-color','#007ee6');
+              $("#cover-image").attr('src', 'img/dropbox.png');
+              $("#cover-text").text("Simplify Life for People Around the World");
+              $("#cover-text-detail").text("Online Sales, Austin, TX");
+            },
+            mouseout : function() {
+              $("#favicon").attr("href","img/favicon.ico");
+              $('#cover').css('background-color','#7ecdc3');
+              $("#cover-image").attr('src', '');
+              $("#cover-text").text("");
+              $("#cover-text-detail").text("");
+              $("#cover-text-detail").append("<a href='https://www.twitter.com/dnosk'>Twitter </a><a href='http://www.linkedin.com/in/danielnoskin'>LinkedIn </a><a href='mailto:dnoskin@gmail.com'>Email</a>");
+                }
+              });
+            $('#collegehumor').on({
+            'mouseover' : function() {
+              $("#favicon").attr("href","img/favicon5.ico");
+              $('#cover').css('background-color','#007ba5');
+              $("#cover-image").attr('src', 'img/collegehumor.png');
+              $("#cover-text").text("CollegeHumor and Charlie Chaplin Believe a Day without Laughter is a Day Wasted");
+              $("#cover-text-detail").text("Sales and Marketing Intern, New York, NY");
+            },
+            mouseout : function() {
+              $("#favicon").attr("href","img/favicon.ico");
+              $('#cover').css('background-color','#7ecdc3');
+              $("#cover-image").attr('src', '');
+              $("#cover-text").text("");
+              $("#cover-text-detail").text("");
+              $("#cover-text-detail").append("<a href='https://www.twitter.com/dnosk'>Twitter </a><a href='http://www.linkedin.com/in/danielnoskin'>LinkedIn </a><a href='mailto:dnoskin@gmail.com'>Email</a>");
+                }
+              });
+            $('#google').on({
+            'mouseover' : function() {
+              $("#favicon").attr("href","img/favicon6.ico");
+              $('#cover').css('background-color','#4083fa');
+              $("#cover-image").attr('src', 'img/google1.png');
+              $("#cover-text").text("In-Depth Introduction in Google's Advertising Sales Operations and Client Products");
+              $("#cover-text-detail").text("AdCamp Intern, New York, NY");
+            },
+            mouseout : function() {
+              $("#favicon").attr("href","img/favicon.ico");
+              $('#cover').css('background-color','#7ecdc3');
+              $("#cover-image").attr('src', '');
+              $("#cover-text").text("");
+              $("#cover-text-detail").text("");
+              $("#cover-text-detail").append("<a href='https://www.twitter.com/dnosk'>Twitter </a><a href='http://www.linkedin.com/in/danielnoskin'>LinkedIn </a><a href='mailto:dnoskin@gmail.com'>Email</a>");
+                }
+              });
+            $('#applico').on({
+            'mouseover' : function() {
+              $("#favicon").attr("href","img/favicon7.ico");
+              $('#cover').css('background-color','#b3b5b4');
+              $("#cover-image").attr('src', 'img/applico1.png');
+              $("#cover-text").text("Applico is a Platform Innovation Company");
+              $("#cover-text-detail").text("Sales and Marketing Intern, New York, NY");
+            },
+            mouseout : function() {
+              $("#favicon").attr("href","img/favicon.ico");
+              $('#cover').css('background-color','#7ecdc3');
+              $("#cover-image").attr('src', '');
+              $("#cover-text").text("");
+              $("#cover-text-detail").text("");
+              $("#cover-text-detail").append("<a href='https://www.twitter.com/dnosk'>Twitter </a><a href='http://www.linkedin.com/in/danielnoskin'>LinkedIn </a><a href='mailto:dnoskin@gmail.com'>Email</a>");
+                }
+              });
+        });  
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,96 @@
+::selection {
+    background:#7ecdc3;
+    color:white;
+}
+::-moz-selection {
+    background:#7ecdc3;
+    color:white;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-shadow: .5px .5px #000000;
+    font-size: 30px;
+}
+
+a{
+	color:white;
+}
+
+a:hover{
+	color:white;
+}
+
+#cover{
+	width:100%;
+	height: 300px;
+	max-height: 300px;
+	background-color: #7ecdc3;
+	z-index: 1;
+}
+
+#cover-image{
+	z-index: 2;
+	position:absolute;
+	margin-top: -250px;
+}
+
+#cover-text{
+	z-index: 2;
+	position:absolute;
+	margin-top: -225px;
+	color:white;
+	text-align: center;
+}
+
+#cover-text-detail{
+	z-index: 2;
+	position:absolute;
+	color:white;
+	font-size: 20px;
+	text-align: center;
+	margin-top: -33px;
+	margin-left: 185px;
+	font-style: italic;
+}
+
+#cover-text-large{
+	z-index: 2;
+	position:absolute;
+	margin-top: -225px;
+	color:white;
+	text-align: center;
+}
+
+.profile img{
+	border-radius: 30px;
+	border-width: 1px;
+	border-color: #fff;
+	border-style: solid;
+	margin-top: -200px;
+	margin-bottom: -150px;
+}
+
+.name{
+	margin-top: -50px;
+	font-size: 30px;
+	color:#fff;
+}
+
+.apps{
+	background-color: #fff;
+}
+
+.apps img{
+	border-radius: 30px;
+}
+
+.first{
+	margin-top:-25px;
+}
+
+.second{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
